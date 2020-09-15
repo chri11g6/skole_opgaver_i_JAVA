@@ -3,6 +3,7 @@ public class App {
         StringContainer data = new StringContainer();
 
         data.put("Kage");
+        data.put("Ged");
         data.put("Is");
         data.put("Isbil");
         data.put("Bil");
