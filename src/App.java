@@ -10,5 +10,8 @@ public class App {
         for (int i = 0; i < data.length(); i++) {
             System.out.println(data.get(i));
         }
+        
+        System.out.println(data.get(20));
+
     }
 }
