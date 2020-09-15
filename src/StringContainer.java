@@ -1,27 +1,27 @@
 public class StringContainer {
 
-    private String[] data;
+    private String[] datas;
 
     public void put(String string) {
-        if (data == null){
-            data = new String[1];
-            data[0] = string;
+        if (datas == null){
+            datas = new String[1];
+            datas[0] = string;
         }else{
-            String[] buffer = new String[data.length + 1];
-            for(int i = 0; i < data.length + 1; i++){
-                if(i < data.length){
-                    buffer[i] = data[i];
+            String[] buffer = new String[datas.length + 1];
+            for(int i = 0; i < datas.length + 1; i++){
+                if(i < datas.length){
+                    buffer[i] = datas[i];
                 } else {
                     buffer[i] = string;
                 }
             }
-            data = buffer;
+            datas = buffer;
         }
     }
 
     public String get(int i) {
-        if(i < data.length){
-            return data[i];
+        if(i < datas.length){
+            return datas[i];
         }else{
             return null;
         }
@@ -29,6 +29,6 @@ public class StringContainer {
     }
 
     public int length() {
-        return data.length;
+        return datas.length;
     }
 }
