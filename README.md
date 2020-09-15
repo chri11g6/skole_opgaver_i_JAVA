@@ -1,3 +1,16 @@
+# Opgaver
+
+Lav en klasse, kaldet StringContainer. Den skal indeholde et Array af Strings, og have tre metoder:
+
+- public void put(String string) - Skal gemme den medfølgende parameter i første ledige plads i Arrayet
+- public String get(int i) - Skal returnere den streng, der er placeret i position i (eller null, hvis der ikke er nogen)
+- public int length() - Skal returnere antallet af brugte pladser i Arrayet
+
+Klassen skal ikke indeholde en main-metode.
+Lav så en klasse - TestStringContainer, med en main-metode, der kan lave en instans af StringContainer, og teste at den virker. Lav desuden en for-løkke, der læser og udskriver alle elementer fra StringContainer via dens metoder.
+
+
+# VS CODE
 ## Getting Started
 
 Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
