@@ -20,7 +20,12 @@ public class StringContainer {
     }
 
     public String get(int i) {
-        return data[i];
+        if(i < data.length){
+            return data[i];
+        }else{
+            return null;
+        }
+        
     }
 
     public int length() {
