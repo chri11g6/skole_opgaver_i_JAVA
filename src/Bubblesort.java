@@ -1,4 +1,4 @@
-public class Bubblesort {
+public class BubbleSort {
     public static int[] Sort(int[] data){
         boolean isSort = false;
 
