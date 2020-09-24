@@ -1,34 +1,28 @@
 public class StringContainer {
+    private String[] strings = new String[5];
+	private int index = 0; // pointer to next free element in array
 
-    private String[] datas;
-
-    public void put(String string) {
-        if (datas == null){
-            datas = new String[1];
-            datas[0] = string;
-        }else{
-            String[] buffer = new String[datas.length + 1];
-            for(int i = 0; i < datas.length + 1; i++){
-                if(i < datas.length){
-                    buffer[i] = datas[i];
-                } else {
-                    buffer[i] = string;
-                }
-            }
-            datas = buffer;
-        }
-    }
-
-    public String get(int i) {
-        if(i < datas.length){
-            return datas[i];
-        }else{
-            return null;
-        }
-        
-    }
-
-    public int length() {
-        return datas.length;
-    }
+	public void put(String string) {
+		if (index >= strings.length) {
+			String[] tempArray = new String[strings.length * 2];
+			for (int i = 0; i < strings.length; i++) {
+				tempArray[i] = strings[i];
+			}
+			strings = tempArray;
+		}
+		strings[index] = string;
+		index++;
+	}
+	
+	public String get(int i) {
+		if (i >= 0 && i<index) {
+			return strings[i];
+		} else {
+			return null;
+		}
+	}
+	
+	public int length() {
+		return index;
+	}
 }
