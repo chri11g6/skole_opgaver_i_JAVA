@@ -1,8 +1,8 @@
 public class StringContainer {
-    private String[] strings = new String[5];
-    private int index = 0; // pointer to next free element in array
+    protected String[] strings = new String[5];
+    protected int index = 0; // pointer to next free element in array
 
-    public void put(String string) {
+    public void push(String string) {
         if (index >= strings.length) {
             String[] tempArray = new String[strings.length * 2];
             for (int i = 0; i < strings.length; i++) {
